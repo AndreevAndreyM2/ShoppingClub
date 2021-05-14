@@ -1,0 +1,15 @@
+<?php
+$viewModel = $block->getData('viewModel');
+$_product = $block->getProduct();
+?>
+<div class="">
+    <?php
+    $attribute = $_product->getResource()->getAttribute('club_attribute');
+    $attr_value = $attribute ->getFrontend()->getValue($_product);
+    if ($attribute)
+        if($viewModel->isLoggedIn()){}
+    else
+    echo  $attr_value ?>
+
+</div>
+
